@@ -1,0 +1,127 @@
+#about .about-container {
+  display: grid;
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  align-items: start;
+  justify-items: stretch;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#about .about-content {
+  display: grid;
+  width: 100%;
+  max-width: 76rem;
+  align-items: center;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+}
+
+#about .about-copy {
+  min-width: 0;
+}
+
+#about .about-heading {
+  margin-bottom: 1.5rem;
+}
+
+#about .about-heading h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: var(--type-section-heading);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+#about .about-heading h2 span,
+#about .about-lead span {
+  color: var(--accent-primary);
+}
+
+#about .about-lead {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--text-primary);
+  font-size: var(--type-subheading);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+#about .about-description {
+  max-width: 42rem;
+  margin: 1rem 0 0;
+  color: var(--text-secondary);
+  font-size: var(--type-body);
+  line-height: 1.75;
+}
+
+#about .about-highlights {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#about .about-highlight {
+  display: grid;
+  min-width: 0;
+  padding: 1.1rem 0;
+  column-gap: 1rem;
+  grid-template-columns: 1.5rem minmax(0, 1fr);
+}
+
+#about .about-highlight + .about-highlight {
+  border-top: 1px solid var(--border-primary);
+}
+
+#about .about-highlight-icon {
+  grid-row: span 2;
+  color: var(--accent-primary);
+}
+
+#about .about-highlight h3 {
+  margin: 0.55rem 0 0;
+  color: var(--accent-primary);
+  font-family: var(--font-heading);
+  font-size: var(--type-subheading);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#about .about-highlight p {
+  margin: 0.45rem 0 0;
+  color: var(--text-secondary);
+  font-size: var(--type-label);
+  line-height: 1.65;
+}
+
+@media (max-width: 1024px) {
+  #about .about-content {
+    gap: clamp(2rem, 4vw, 3rem);
+  }
+}
+
+@media (max-width: 767px) {
+  #about.about-section {
+    padding-inline: 1.25rem;
+  }
+
+  #about .about-container {
+    max-width: 38rem;
+  }
+
+  #about .about-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  #about .about-heading {
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+
+  #about .about-highlight {
+    padding: 1rem 0;
+    column-gap: 0.85rem;
+  }
+}

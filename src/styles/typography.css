@@ -1,0 +1,160 @@
+body {
+  font-family: var(--font-sans);
+  font-size: var(--type-body);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+.hero-section .hero-heading {
+  font-family: var(--font-heading);
+  font-size: var(--type-hero-heading);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+}
+
+.hero-section .hero-name {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.hero-section .hero-role {
+  font-size: var(--type-label);
+  letter-spacing: 0.14em;
+}
+
+.hero-stat-value {
+  font-family: var(--font-heading);
+  font-size: var(--type-stat);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+.hero-stat-label,
+.hero-index,
+.hero-scroll {
+  font-size: var(--type-label);
+  letter-spacing: 0.12em;
+}
+
+.hero-section .hero-intro {
+  font-size: var(--type-body);
+  line-height: 1.75;
+}
+
+.site-brand-name {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.site-nav-link {
+  font-family: var(--font-sans);
+  font-size: var(--type-nav);
+  font-weight: 500;
+}
+
+.section-eyebrow,
+.projects-eyebrow,
+.contact-detail-label {
+  font-family: var(--font-mono);
+  font-size: var(--type-label);
+  font-weight: 500;
+}
+
+.section-heading h2,
+#about .about-heading h2,
+.projects-heading h2,
+.contact-copy h2 {
+  font-family: var(--font-heading);
+  font-size: var(--type-section-heading);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.section-intro,
+#about .about-lead,
+#about .about-description,
+.projects-intro,
+.contact-description {
+  font-size: var(--type-body);
+  letter-spacing: -0.01em;
+  line-height: 1.75;
+}
+
+.skill-group-index,
+.project-number {
+  font-family: var(--font-mono);
+  font-size: var(--type-label);
+  font-weight: 500;
+}
+
+.project-tags li {
+  font-family: var(--font-mono);
+  font-size: var(--type-label);
+  font-weight: 400;
+}
+
+.projects-heading h2 {
+  font-size: var(--type-section-heading);
+}
+
+.project-title {
+  font-family: var(--font-heading);
+  font-size: var(--type-card-heading);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.project-description {
+  font-size: clamp(0.9375rem, 1vw, 1rem);
+  line-height: 1.7;
+}
+
+.project-number {
+  letter-spacing: 0.02em;
+}
+
+.projects-cta,
+.portfolio-button,
+.contact-submit {
+  font-family: var(--font-sans);
+  font-size: var(--type-button);
+  font-weight: 600;
+}
+
+.site-nav-cta {
+  font-size: var(--type-button);
+}
+
+.contact-form label {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+}
+
+.contact-details li {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.contact-form-status {
+  font-size: var(--type-label);
+}

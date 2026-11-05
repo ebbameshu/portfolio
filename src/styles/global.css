@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  background: var(--page-background);
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+  background: var(--page-background);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition:
+    background-color 220ms ease,
+    color 220ms ease;
+}
+
+html,
+body,
+#root {
+  min-width: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+body,
+button,
+a,
+input,
+textarea,
+select {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+p,
+label {
+  transition: color var(--transition-base);
+}
+
+.portfolio-section,
+.about-section,
+.contact-section,
+.site-header,
+.site-nav {
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text-primary);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 4px;
+}
+
+* {
+  scrollbar-color: var(--border-primary) var(--bg-primary);
+}
